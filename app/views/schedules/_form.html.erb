@@ -1,0 +1,19 @@
+<%= form_for @schedule do |f| %>
+	<div>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</div>
+	<div>
+		<%= f.label :creator %>
+		<%= f.text_field :creator %>
+	</div>
+	<div>
+		<%= f.label :public_view %>
+		<%= f.text_field :public_view %>
+	</div>
+	<div>
+		<%= f.label :private_view %>
+		<%= f.text_field :private_view %>
+	</div>
+	<%= f.submit 'Submit' %>
+<% end %>
