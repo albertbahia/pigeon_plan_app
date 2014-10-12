@@ -1,0 +1,12 @@
+<h2>Users Index Page</h2>
+<ul>
+	<hr>
+	<% @users.each do |user| %>
+		User ID: <%= link_to "#{user.id}", user_path(user.id) %><br>
+		First Name: <%= user.first_name %><br>
+		Last Name: <%= user.last_name %><br>
+		Gender: <%= user.gender %>
+		<hr>
+	<% end %>
+</ul>
+
