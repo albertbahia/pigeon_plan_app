@@ -14,16 +14,20 @@ class SchedulesController < ApplicationController
 	def create
 		@schedule = Schedule.new(schedule_params)
 		if @schedule.save
-			redirect_to users_path
+			redirect_to schedule_path(@schedule.id)
 		else
 			render :new
 		end
 	end
 
 	def edit
+		@schedule = Schedule.find(params[:id])
 	end
 
 	def update
+		@schedule = Schedule.find(params[:id])
+		@schedule.update(schedule_params)
+		redirect_to schedule_path(@schedule.id)
 	end
 
 	def destroy

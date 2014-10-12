@@ -1,4 +1,4 @@
-<h3>Calendar Page</h3>
+<h3>Schedule Page</h3>
 
 Schedule ID: <%= @schedule.id %><br>
 Name: <%= @schedule.name %><br>
@@ -6,4 +6,5 @@ Schedule Creator: <%= @schedule.creator %><br>
 Public View: <%= @schedule.public_view %><br>
 Private View: <%= @schedule.private_view %><br>
 
+<%= link_to 'Edit Schedule', edit_schedule_path %><br>
 <%= link_to '<< Back to Users Index Page', users_path %>
