@@ -48,6 +48,41 @@ end
 # ---Events seed data-------------
 names = ['Fall Festival', 'Jay-Z Concert', 'Annual Bar Crawl', 'Oktoberfest']
 
+creators = ['penny', 'sheldon', 'leonard', 'raj']
 
+numbers_in_attendance = [23, 1000, 50, 25, 30000, 400]
+
+prices = [50, 25, 35, 10, 20]
+
+venue_names = ['Roxbury', 'Abicus', 'Oculus', 'Steakness House']
+
+durations = [2, 4, 6, 8, 10]
+
+types = ['concert', 'conference', 'birthday', 'business launch']
+
+calendar_dates = ['January 20, 2015', 'December 20, 2014', 'November 10, 2014', 'February 1, 2015']
+
+host_names = ['John McK', 'MC Dominic', 'MC Sheldon', 'MC Leonard', 'MC Raj', 'MC wolowitz']
+
+names.each do |name|
+	Event.create({
+		name: name,
+		creator: creators.sample,
+		number_in_attendance: numbers_in_attendance.sample,
+		price: prices.sample,
+		venue_name: venue_names.sample,
+		duration: durations.sample,
+		event_type: types.sample,
+		calendar_date: calendar_dates.sample,
+		host_name: host_names.sample,
+		number_males_attending: numbers_in_attendance.sample,
+		number_females_attending: numbers_in_attendance.sample,
+		street_address: street_addresses.sample,
+		city: cities.sample,
+		state: states.sample,
+		zip_code: zip_codes.sample
+	})
+
+end
 
 
