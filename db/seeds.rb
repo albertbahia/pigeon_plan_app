@@ -45,3 +45,9 @@ end
 
 # --------------------------------
 
+# ---Events seed data-------------
+names = ['Fall Festival', 'Jay-Z Concert', 'Annual Bar Crawl', 'Oktoberfest']
+
+
+
+
