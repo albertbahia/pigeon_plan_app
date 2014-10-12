@@ -1,0 +1,6 @@
+<h2>Edit <%= "#{@user.first_name}" %>'s Profile</h2>
+<%= render 'form' %>
+<%= link_to 'Delete Profile', user_path(@user), method: :delete %>
+<br>
+<br>
+<%= link_to 'Back to Homepage', root_path %>
