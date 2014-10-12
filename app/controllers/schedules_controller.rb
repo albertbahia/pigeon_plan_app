@@ -1,6 +1,7 @@
 class SchedulesController < ApplicationController
 
 	def index
+		@schedules = Schedule.all
 	end
 
 	def show
@@ -31,6 +32,9 @@ class SchedulesController < ApplicationController
 	end
 
 	def destroy
+		@schedule = Schedule.find(params[:id])
+		@schedule.destroy
+		redirect_to schedules_path
 	end
 
 	private
