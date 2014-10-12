@@ -1,0 +1,16 @@
+<h3>Event Page for <%= @event.name %></h3>
+
+Name of Event: <%= @event.name %><br>
+Event Creator: <%= @event.creator %><br>
+Number Going To Event: <%= @event.number_in_attendance %><br>
+Males Going: <%= @event.number_males_attending %><br>
+Females Going: <%= @event.number_females_attending %><br>
+Price: <%= @event.price %><br>
+Venue: <%= @event.venue_name %><br>
+Duration: <%= @event.duration %><br>
+When: <%= @event.calendar_date %><br>
+Where: <%= @event.street_address %><br>
+			<%= @event.city %>, <%= @event.state %> <%= @event.zip_code %><br>
+Host: <%= @event.host_name %><br>
+Type of Event: <%= @event.event_type %><br>
+Created at: <%= @event.created_at %><br>
