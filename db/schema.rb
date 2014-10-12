@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141012162915) do
+ActiveRecord::Schema.define(version: 20141012212716) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,8 +47,8 @@ ActiveRecord::Schema.define(version: 20141012162915) do
   create_table "schedules", force: true do |t|
     t.string  "name"
     t.string  "creator"
-    t.boolean "public"
-    t.boolean "private"
+    t.boolean "public_view"
+    t.boolean "private_view"
   end
 
   create_table "users", force: true do |t|
