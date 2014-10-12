@@ -7,12 +7,30 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<h1>Navigation Header</h1>
+	<header>
+		<div id="nav">
+			<h1>Navigation Header</h1>
+			<%= link_to 'Home', root_path %> |
+			<% if current_user %>
+				<%= link_to 'Create Event', '#' %> |
+			<% else %>
+				<%= link_to 'Sign Up', new_user_path %> |
+				<%= link_to 'Log In', login_path %> |
+			<% end %>
+			<%= link_to 'Users Index', users_path %>
+		</div>
+		<% if current_user %>
+			<div id="user-info">
+				<p>Welcome <span><%= current_user.username %></span>!</p>
+				<p><%= link_to 'Edit Profile', edit_user_path(current_user) %>
+				<p><%= link_to 'Logout', logout_path %></p>
+			</div>
+		<% end %>
+	</header>
 
-	<%= link_to 'Users Index', users_path %>
-	<%= link_to 'Sign Up', new_user_path %>
-
-<%= yield %>
+	<div id="content">
+		<%= yield %>
+	</div>
 
 </body>
 </html>

@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   # ---Sessions---
   get '/login' => 'sessions#new'
-  get '/sessions' => 'sessions#create'
+  post '/sessions' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
   get '/error' => 'sessions#error'
 end
