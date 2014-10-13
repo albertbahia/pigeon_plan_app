@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: 'application#main'
   resources :users
+  get '/home' => 'users#home', as: 'user_home'
   resources :schedules
   resources :events
 
