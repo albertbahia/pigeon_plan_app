@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :events
 
   # ---Sessions---
-  get '/' => 'sessions#new'
+  get '/login' => 'sessions#new'
   post '/sessions' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
   get '/error' => 'sessions#error'

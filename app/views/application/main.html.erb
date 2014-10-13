@@ -1,13 +1,1 @@
 <h2>Landing Page</h2>
-<%= form_tag sessions_path id: 'login' do %>
-	<p><%= flash[:login_error] %></p>
-
-	<%= label_tag :email %>
-	<%= text_field_tag :email %>
-
-	<%= label_tag :password %>
-	<%= password_field_tag :password %>
-	<br>
-
-	<%= submit_tag 'Log In' %>
-<% end %>
