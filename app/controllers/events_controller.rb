@@ -3,7 +3,12 @@ class EventsController < ApplicationController
 
 
 	def index
-		@events = Event.all
+		if current_user
+			@events = Event.all
+			@events = Event.where(creator_id: current_user.id)
+		else
+			@events = Event.all
+		end
 	end
 
 	def show
@@ -11,13 +16,17 @@ class EventsController < ApplicationController
 	end
 
 	def new
-		@event = Event.new
+		params[:creator_id] = current_user.id
+		params[:creator] = current_user.username
+		@event = Event.new(:creator_id => params[:creator_id], :creator => params[:creator])
 	end
 
 	def create
+		params[:creator_id] = current_user.id
+		params[:creator] = current_user.username
 		@event = Event.new(event_params)
 		if @event.save
-			redirect_to root_path
+			redirect_to user_home_path
 		else
 			render :new
 		end
