@@ -1,7 +1,13 @@
 class SchedulesController < ApplicationController
+	before_action :authorize, only: [:edit]
 
 	def index
-		@schedules = Schedule.all
+		if current_user
+			@schedules = Schedule.all
+			@schedules = Schedule.where(creator_id: current_user.id)
+		else
+			@schedules = Schedule.all
+		end
 	end
 
 	def show
@@ -9,13 +15,17 @@ class SchedulesController < ApplicationController
 	end
 
 	def new
-		@schedule = Schedule.new
+		params[:creator_id] = current_user.id
+		params[:creator] = current_user.username
+		@schedule = Schedule.new(:creator_id => params[:creator_id], :creator => params[:creator])
 	end
 
 	def create
+		params[:creator_id] = current_user.id
+		params[:creator] = current_user.username
 		@schedule = Schedule.new(schedule_params)
 		if @schedule.save
-			redirect_to schedule_path(@schedule.id)
+			redirect_to user_home_path
 		else
 			render :new
 		end
@@ -39,7 +49,7 @@ class SchedulesController < ApplicationController
 
 	private
 	def schedule_params
-		params.require(:schedule).permit(:name, :creator, :public_view, :private_view)
+		params.require(:schedule).permit(:name, :creator, :public_view, :private_view, :creator_id)
 	end
 
 end

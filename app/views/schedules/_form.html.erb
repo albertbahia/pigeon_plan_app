@@ -3,9 +3,8 @@
 		<%= f.label :name %>
 		<%= f.text_field :name %>
 	</div>
-	<div>
-		<%= f.label :creator %>
-		<%= f.text_field :creator %>
+	<div><%= f.text_field :creator_id, style: "#{'display:none'}" %>
+		<%= f.text_field :creator, style: "#{'display:none'}" %>
 	</div>
 	<div>
 		<%= f.label :public_view %>
