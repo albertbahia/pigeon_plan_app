@@ -1,1 +1,67 @@
-<h2>Landing Page</h2>
+<!doctype html>
+<html>
+	
+	<head>
+		 <link rel="stylesheet" href="css/Ken001.css" />
+		 <link rel="stylesheet" href="css/Icon.css">
+		 <link rel="stylesheet" href="css/jquery-ui.min.css">
+	</head>
+
+	<body>
+		
+		<div id="HotSpot">
+		
+			<form id="SearchBox" action="#">
+				<input id="SearchInput" type="text" name="Search" value=" Search Venue or Events"/>
+				<input id="SearchIcon" type="submit" value=" "/>
+			</form>
+			<div id="HeaderEvent"><span class="Text icon icon-crown"> TOP 5 HOT SPOTS</span></div>
+			<div id="HeaderTimeLine">
+				<div id="HeaderDate">
+					<button id="Arrow" class="icon icon-backwards"></button>
+					<input id="Date" class="Text" />
+					<button id="Arrow" class="icon icon-forwards"></button>
+				</div>
+				<div id="Time" class="Text">12am | 01am | 02am | 03am | 04am | 05am | 06am | 07am | 08am | 09am | 10am | 11am | 12pm | 01pm | 02pm | 03pm | 04pm</div>
+			</div>
+			<div id="HeaderOptions"><span class="Text">LOGO</span></div>
+			
+			<div id="Title">
+					<div id="Box1" class="Top"><span class="Text">Venue 1</span></div>
+					<div id="Box2" class="Top"><span class="Text">Venue 2</span></div>
+					<div id="Box3" class="Top"><span class="Text">Venue 3</span></div>
+					<div id="Box4" class="Top"><span class="Text">Venue 4</span></div>
+					<div id="Box5" class="Top"><span class="Text">Venue 5</span></div>
+			</div><!--Title-->
+			
+			<div id="Timeline">
+				<div class="icon icon-back faded TimeArrow "></div>
+				<div class="TimeArrow icon icon-next faded"></div>
+			</div><!--Timeline-->
+			
+			<div id="Options">
+				<form id="SearchOption" action="#">
+					<div id=filterName><h4>Quick Filter</h4></div>
+					<input type="checkbox" name="option" value="option1"/>Option1 <br />
+					<input type="checkbox" name="option" value="option2"/>Option2 <br />
+					<input type="checkbox" name="option" value="option3"/>Option3 <br />
+					<input type="checkbox" name="option" value="option4"/>Option4 <br />
+					<input type="checkbox" name="option" value="option5"/>Option5 <br />
+					<input type="checkbox" name="option" value="option6"/>Option6 <br />
+					<input type="submit" value="Filter" id="SearchButton"/>
+				</form>
+			</div><!--Options-->
+		
+			<div id="FooterEvent"><span class="Text"><a href="#">View All Venues</a></span></div>
+			<div id="FooterSlider"><span class="Text"> | | | | | </span></div>
+			<div id="FooterOptions"></div>
+		</div> <!--HotSpot-->
+			
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/Ken001.js"></script>
+			
+	</body>
+	
+	
+</html>
