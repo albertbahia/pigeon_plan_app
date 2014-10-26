@@ -1,0 +1,237 @@
+* { margin: 0; padding: 0; }
+
+#HotSpot
+	{
+		position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+	}
+
+#SearchBox
+	{
+		margin: 10px auto 10px auto;
+		text-align: center;
+		line-height: 60px;
+	}
+	
+#SearchInput
+	{
+		width: 600px;
+		height: 25px;
+	}
+
+#SearchIcon
+	{
+		width: 26px;
+		height: 26px;
+		background:url("../image/Search.png");
+		background-size: 26px 26px;
+		background-repeat: no-repeat;
+		border: 0;
+	}
+	
+#HeaderEvent
+	{
+		border: 1px solid black;
+		height: 60px;
+		width: 200px;
+		text-align: center;
+		line-height: 60px;
+		float: left;
+		clear: left;
+	}
+
+#HeaderTimeLine
+	{
+		border: 1px solid black;
+		height: 60px;
+		width: 800px;
+		float: left;
+		text-align: center;
+		line-height: 60px;
+	}
+	
+#HeaderDate
+	{
+		height: 30px;
+		width: 800px;
+		text-align: center;
+		line-height: 30px;
+	}
+
+#Arrow
+	{
+		display: inline-block;
+		vertical-align: middle;
+		line-height: normal;
+		height: 20px;
+		width: 20px;
+	}
+
+#InputDate
+	{
+		font-weight: bold;
+		text-align: center;
+		width: 250px; 
+		height: 20px;
+	}
+	
+#InputTime
+	{
+		font-weight: bold;
+		text-align: center;
+		width: 100px; 
+		height: 20px;
+	}
+	
+#AmPm
+	{
+		font-weight: bold;
+		text-align: center;
+		width: 50px; 
+		height: 20px;
+	}
+
+#Time
+	{
+		display: block;
+		text-align: center;
+		line-height: 30px;
+	}
+
+#HeaderOptions
+	{
+		border: 1px solid black;
+		height: 60px;
+		width: 200px;
+		text-align: center;
+		line-height: 60px;
+		float: left;
+	}
+
+#Title
+	{
+		border: 1px solid black;
+		height: 330px;
+		width: 200px;
+		float: left;
+		clear: left;
+	}
+
+.Top 
+	{
+		height: 50px;
+		width: 146px;
+		border: 1px solid black;
+		text-align: center;
+		line-height: 50px;
+		margin-top: 10px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+#Timeline
+	{
+		border: 1px solid black;
+		height: 330px;
+		width: 800px;
+		float: left;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		clear: left;
+	}
+
+.TimeArrow
+	{
+		font-size: 60px;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+.icon-back
+	{
+		float: left;
+	}
+	
+.icon-next
+	{
+		float: right;
+	}
+		
+#Options
+	{
+		height: 330px;
+		width: 200px;
+		border: 1px solid black;
+		float: left;
+	}
+	
+#filterName
+	{
+		margin: 10px;
+		text-align: center;
+	
+	}
+	
+#SearchButton
+	{
+		height: 20px;
+		width: 50px;
+	}
+	
+#FooterEvent
+	{
+		border: 1px solid black;
+		height: 40px;
+		width: 200px;
+		float: left;
+		clear: left;
+		text-align: center;
+		line-height: 40px;
+	}
+
+#FooterSlider
+	{
+		border: 1px solid black;
+		height: 40px;
+		width: 800px;
+		float: left;
+		text-align: center;
+		line-height: 40px;
+	}
+	
+#FooterOptions
+	{
+		border: 1px solid black;
+		height: 40px;
+		width: 200px;
+		float: left;
+	}
+	
+.Text
+	{
+		 display: inline-block;
+		 vertical-align: middle;
+		 line-height: normal;
+	 }
+	 
+#SearchOption
+	{
+		padding: 10px;
+	}
+	
+#SearchButton
+	{
+		float: right;
+	}
+
+.faded
+{
+	opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+
