@@ -1,0 +1,9 @@
+<h3>Schedule Index Page</h3>
+<hr>
+<% @schedules.each do |schedule| %>
+	Name: <%= link_to "#{schedule.name}", schedule_path(schedule.id) %><br>
+	Schedule Creator: <%= schedule.creator %><br>
+	Public View: <%= schedule.public_view %><br>
+	Private View: <%= schedule.private_view %><br>
+	<hr>
+<% end %>

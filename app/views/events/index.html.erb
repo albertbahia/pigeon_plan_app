@@ -1,0 +1,20 @@
+<h3>Events Index Page</h3>
+<hr>
+<% @events.each do |event| %>
+	Event ID: <%= event.id %><br>
+	Name of Event: <%= link_to "#{event.name}", event_path(event.id) %><br>
+	Event Creator: <%= event.creator %><br>
+	Number Going To Event: <%= event.number_in_attendance %><br>
+	Males Going: <%= event.number_males_attending %><br>
+	Females Going: <%= event.number_females_attending %><br>
+	Price: <%= event.price %><br>
+	Venue: <%= event.venue_name %><br>
+	Duration: <%= event.duration %><br>
+	When: <%= event.calendar_date %><br>
+	Where: <%= event.street_address %><br>
+				<%= event.city %>, <%= event.state %> <%= event.zip_code %><br>
+	Host: <%= event.host_name %><br>
+	Type of Event: <%= event.event_type %><br>
+	Created at: <%= event.created_at %><br>
+	<hr>
+<% end %>

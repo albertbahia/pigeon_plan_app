@@ -1,0 +1,6 @@
+<h3>Edit Schedule</h3>
+
+<%= render 'form' %>
+
+<%= link_to 'Delete Schedule', schedule_path(@schedule), method: :delete %><br><br>
+<%= link_to '<< Back to Schedule Page', schedule_path(@schedule.id) %>
