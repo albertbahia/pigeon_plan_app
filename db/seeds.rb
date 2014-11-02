@@ -84,5 +84,17 @@ names.each do |name|
 	})
 
 end
+# --------------------------------
 
-
+# ----Venues seed data------------
+venue_names	.each do |venue|
+	Venue.create({
+		name: venue,
+		street: street_addresses.sample,
+		city: cities.sample,
+		state: states.sample,
+		latitude: nil,
+		longitude: nil
+		})
+end
+# --------------------------------

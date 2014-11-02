@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141102194457) do
+ActiveRecord::Schema.define(version: 20141102214133) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20141102194457) do
     t.boolean  "private_view"
     t.integer  "latitude"
     t.integer  "longitude"
+    t.integer  "venue_id"
   end
 
   create_table "events_schedules", force: true do |t|
