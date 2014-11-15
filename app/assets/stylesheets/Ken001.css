@@ -1,4 +1,11 @@
-* { margin: 0; padding: 0; }
+* 
+	{ 
+		margin: 0; 
+		padding: 0; 
+		/*
+		outline: 1px dashed #000;
+		*/
+	}
 
 #HotSpot
 	{
@@ -7,11 +14,13 @@
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
+		border: 1px solid black;
 	}
-
+	
 #SearchBox
 	{
-		margin: 10px auto 10px auto;
+		width: 1208px;
+		height: 60px;
 		text-align: center;
 		line-height: 60px;
 	}
@@ -34,58 +43,58 @@
 	
 #HeaderEvent
 	{
-		border: 1px solid black;
-		height: 60px;
 		width: 200px;
-		text-align: center;
-		line-height: 60px;
+		height: 64px;
 		float: left;
 		clear: left;
+		border: 1px solid black;
+		text-align: center;
+		line-height: 60px;
 	}
 
 #HeaderTimeLine
 	{
-		border: 1px solid black;
-		height: 60px;
 		width: 800px;
+		height: 64px;
+		border: 1px solid black;
 		float: left;
 		text-align: center;
-		line-height: 60px;
+		
 	}
 	
 #HeaderDate
 	{
-		height: 30px;
 		width: 800px;
+		height: 32px;
 		text-align: center;
-		line-height: 30px;
+		line-height: 32px;
 	}
 
 #Arrow
 	{
+		width: 20px;
+		height: 20px;
 		display: inline-block;
 		vertical-align: middle;
 		line-height: normal;
-		height: 20px;
-		width: 20px;
 	}
 
 #InputDate
 	{
-		font-weight: bold;
-		text-align: center;
 		width: 250px; 
 		height: 20px;
+		font-weight: bold;
+		text-align: center;
 	}
 	
 #InputTime
 	{
-		font-weight: bold;
-		text-align: center;
 		width: 100px; 
 		height: 20px;
+		font-weight: bold;
+		text-align: center;
 	}
-	
+/*	
 #AmPm
 	{
 		font-weight: bold;
@@ -93,19 +102,33 @@
 		width: 50px; 
 		height: 20px;
 	}
-
+*/
 #Time
 	{
-		display: block;
+		width: 800px;
+		height: 32px;
+		float: left;
+		clear: left;
+		/*border: 1px solid black;*/s
 		text-align: center;
-		line-height: 30px;
+		line-height: 32px;
+	}
+	
+.TimeAxis
+	{
+		width: 20%;
+		height: 32px;
+		display: inline-block;
+		margin: 0px;
+		padding: 0px;
+		/*border: 1px solid black;*/
 	}
 
 #HeaderOptions
 	{
-		border: 1px solid black;
-		height: 60px;
 		width: 200px;
+		height: 64px;
+		border: 1px solid black;
 		text-align: center;
 		line-height: 60px;
 		float: left;
@@ -113,17 +136,17 @@
 
 #Title
 	{
-		border: 1px solid black;
-		height: 330px;
 		width: 200px;
+		height: 330px;
 		float: left;
 		clear: left;
+		border: 1px solid black;
 	}
 
 .Top 
 	{
-		height: 50px;
 		width: 146px;
+		height: 50px;
 		border: 1px solid black;
 		text-align: center;
 		line-height: 50px;
@@ -134,14 +157,14 @@
 	
 #Timeline
 	{
-		border: 1px solid black;
 		height: 330px;
 		width: 800px;
 		float: left;
+		/*clear: left;*/
+		border: 1px solid black;
 		-webkit-transform-style: preserve-3d;
 		-moz-transform-style: preserve-3d;
 		transform-style: preserve-3d;
-		clear: left;
 	}
 
 .TimeArrow
@@ -164,8 +187,8 @@
 		
 #Options
 	{
-		height: 330px;
 		width: 200px;
+		height: 330px;
 		border: 1px solid black;
 		float: left;
 	}
@@ -179,37 +202,37 @@
 	
 #SearchButton
 	{
-		height: 20px;
 		width: 50px;
+		height: 20px;
 	}
 	
 #FooterEvent
 	{
-		border: 1px solid black;
 		height: 40px;
 		width: 200px;
 		float: left;
 		clear: left;
+		border: 1px solid black;
 		text-align: center;
 		line-height: 40px;
 	}
 
 #FooterSlider
 	{
-		border: 1px solid black;
-		height: 40px;
 		width: 800px;
+		height: 40px;
 		float: left;
+		border: 1px solid black;
 		text-align: center;
 		line-height: 40px;
 	}
 	
 #FooterOptions
 	{
-		border: 1px solid black;
-		height: 40px;
 		width: 200px;
+		height: 40px;
 		float: left;
+		border: 1px solid black;
 	}
 	
 .Text
@@ -230,8 +253,8 @@
 	}
 
 .faded
-{
-	opacity: 0.3;
-    filter: alpha(opacity=30);
-}
+	{
+		opacity: 0.3;
+		filter: alpha(opacity=30);
+	}
 
