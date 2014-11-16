@@ -1,15 +1,16 @@
+console.log('Timeline.js loaded');
   (function () {
 
-	var Time = $("#InputTime").
-	
-	alert(Time);
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	var Time = $("#InputTime");
+
+	// alert(Time);
+
+
+
+
+
+
+
+
+
   }());

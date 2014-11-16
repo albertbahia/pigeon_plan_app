@@ -1,7 +1,7 @@
-* 
-	{ 
-		margin: 0; 
-		padding: 0; 
+*
+	{
+		margin: 0;
+		padding: 0;
 		/*
 		outline: 1px dashed #000;
 		*/
@@ -16,7 +16,7 @@
         transform: translate(-50%, -50%);
 		border: 1px solid black;
 	}
-	
+
 #SearchBox
 	{
 		width: 1208px;
@@ -24,7 +24,7 @@
 		text-align: center;
 		line-height: 60px;
 	}
-	
+
 #SearchInput
 	{
 		width: 600px;
@@ -35,12 +35,12 @@
 	{
 		width: 26px;
 		height: 26px;
-		background:url("../image/Search.png");
+		background-image: image-url('Search.png');
 		background-size: 26px 26px;
 		background-repeat: no-repeat;
 		border: 0;
 	}
-	
+
 #HeaderEvent
 	{
 		width: 200px;
@@ -59,9 +59,9 @@
 		border: 1px solid black;
 		float: left;
 		text-align: center;
-		
+
 	}
-	
+
 #HeaderDate
 	{
 		width: 800px;
@@ -81,25 +81,25 @@
 
 #InputDate
 	{
-		width: 250px; 
+		width: 250px;
 		height: 20px;
 		font-weight: bold;
 		text-align: center;
 	}
-	
+
 #InputTime
 	{
-		width: 100px; 
+		width: 100px;
 		height: 20px;
 		font-weight: bold;
 		text-align: center;
 	}
-/*	
+/*
 #AmPm
 	{
 		font-weight: bold;
 		text-align: center;
-		width: 50px; 
+		width: 50px;
 		height: 20px;
 	}
 */
@@ -113,7 +113,7 @@
 		text-align: center;
 		line-height: 32px;
 	}
-	
+
 .TimeAxis
 	{
 		width: 20%;
@@ -143,7 +143,7 @@
 		border: 1px solid black;
 	}
 
-.Top 
+.Top
 	{
 		width: 146px;
 		height: 50px;
@@ -154,7 +154,7 @@
 		margin-right: auto;
 		margin-left: auto;
 	}
-	
+
 #Timeline
 	{
 		height: 330px;
@@ -174,17 +174,17 @@
 		top: 50%;
 		transform: translateY(-50%);
 	}
-	
+
 .icon-back
 	{
 		float: left;
 	}
-	
+
 .icon-next
 	{
 		float: right;
 	}
-		
+
 #Options
 	{
 		width: 200px;
@@ -192,20 +192,20 @@
 		border: 1px solid black;
 		float: left;
 	}
-	
+
 #filterName
 	{
 		margin: 10px;
 		text-align: center;
-	
+
 	}
-	
+
 #SearchButton
 	{
 		width: 50px;
 		height: 20px;
 	}
-	
+
 #FooterEvent
 	{
 		height: 40px;
@@ -226,7 +226,7 @@
 		text-align: center;
 		line-height: 40px;
 	}
-	
+
 #FooterOptions
 	{
 		width: 200px;
@@ -234,19 +234,19 @@
 		float: left;
 		border: 1px solid black;
 	}
-	
+
 .Text
 	{
 		 display: inline-block;
 		 vertical-align: middle;
 		 line-height: normal;
 	 }
-	 
+
 #SearchOption
 	{
 		padding: 10px;
 	}
-	
+
 #SearchButton
 	{
 		float: right;
