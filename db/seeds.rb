@@ -54,7 +54,7 @@ numbers_in_attendance = [23, 1000, 50, 25, 30000, 400]
 
 prices = [50, 25, 35, 10, 20]
 
-venue_names = ['Roxbury', 'Abicus', 'Oculus', 'Steakness House']
+venue_names = ['Roxbury', 'Abicus', 'Oculus', 'Steakness House', 'Boathouse', 'Stage 4', 'Five Star']
 
 durations = [2, 4, 6, 8, 10]
 
@@ -82,7 +82,20 @@ names.each do |name|
 		state: states.sample,
 		zip_code: zip_codes.sample
 	})
-
 end
 
+popularity_ratings = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+venue_names.each do |venue_name|
+	Venue.create({
+		name: venue_name,
+		street: street_addresses.sample,
+		city: cities.sample,
+		state: states.sample,
+		country: 'USA',
+		latitude: 00000,
+		longitude: 000000,
+		popularity_rating: popularity_ratings.sample
+	})
+end
 
