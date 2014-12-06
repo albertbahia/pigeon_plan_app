@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get '/home' => 'users#home', as: 'user_home'
   resources :schedules
   resources :events
+  resources :venues
+  get '/top_venues' => 'venues#top_venues', as: 'top_venues'
 
   # ---Sessions---
   get '/login' => 'sessions#new'
