@@ -4,7 +4,7 @@
 <ul>
 	<%	@venues.each do |venue| %>
 		<li>Venue Name: <%= venue.name %></li>
-		Popularity Rating: <%= venue.popularity_rating ? venue.popularity_rating : "N/A" %>
+		Popularity Rating: <%= venue.popularity_rating %>
 	<hr>
 	<% end %>
 </ul>
