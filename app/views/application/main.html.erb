@@ -24,11 +24,13 @@
 			<div id="HeaderOptions"><span class="Text">LOGO</span></div>
 
 			<div id="Title">
-					<div id="Box1" class="Top"><span class="Text">Venue 1</span></div>
-					<div id="Box2" class="Top"><span class="Text">Venue 2</span></div>
-					<div id="Box3" class="Top"><span class="Text">Venue 3</span></div>
-					<div id="Box4" class="Top"><span class="Text">Venue 4</span></div>
-					<div id="Box5" class="Top"><span class="Text">Venue 5</span></div>
+				<ol>
+					<%	@venues[0..4].each do |venue| %>
+						<li>Venue Name: <%= venue.name %><br>
+						Popularity Rating: <%= venue.popularity_rating %></li>
+						<br>
+					<% end %>
+				</ol>
 			</div><!--Title-->
 
 

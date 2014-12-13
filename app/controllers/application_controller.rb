@@ -5,7 +5,8 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def main
-    venues = Venue.all
+    @venues = Venue.all.sort_by { |venue| venue.popularity_rating }
+    @venues.reverse!
   end
 
   def current_user
