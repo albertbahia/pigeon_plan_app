@@ -5,7 +5,8 @@ class VenuesController < ApplicationController
 	end
 
 	def top_venues
-		@venues = Venue.all.sort_by { |venue| venue.name }
+		@venues = Venue.all.sort_by { |venue| venue.popularity_rating }
+		@venues.reverse!
 	end
 
 	private
