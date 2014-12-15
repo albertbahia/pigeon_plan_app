@@ -84,6 +84,7 @@ names.each do |name|
 	})
 end
 
+# ---Venue seed data----------------------------------
 popularity_ratings = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 venue_names.each do |venue_name|
@@ -98,4 +99,4 @@ venue_names.each do |venue_name|
 		popularity_rating: popularity_ratings.sample
 	})
 end
-
+# ----------------------------------------------------
