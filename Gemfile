@@ -35,9 +35,7 @@ gem 'awesome_print'
 
 gem 'rails_12factor'
 
-group :assets do
-  gem 'twitter-bootstrap-rails'
-end
+gem 'twitter-bootstrap-rails'
 
 # Use unicorn as the app server
 # gem 'unicorn'
