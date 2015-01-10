@@ -3,8 +3,8 @@
 			<div class="form-inline">
 				<div class="form-group">
 					<form id="SearchBox" action="#">
-						<input id="SearchInput" class="form-control" type="text" name="Search" placeholder="Search Venue or Events"/>
-						<input id="search_button" class="btn btn-primary" type="submit" value="Search"/>
+						<input id="SearchInput" type="text" name="Search" placeholder="Search Venue or Events"/>
+						<input id="SearchIcon" type="submit" value=" "/>
 					</form>
 				</div>
 			</div>
@@ -18,9 +18,11 @@
 					<input id="InputTime" class="Text" />
 				</div>
 
-				<div id="Time">
-					<span id="Hour1" class="TimeAxis">1:00</span><span id="Hour2" class="TimeAxis">2:00</span><span id="Hour3" class="TimeAxis">3:00</span><span id="Hour4" class="TimeAxis">4:00</span><span id="Hour5" class="TimeAxis">5:00</span>
-				</div><!--Time-->
+				<div id="TimeWindow">
+					<div id="Time">
+						<span id="Hour1" class="TimeAxis"></span><span id="Hour2" class="TimeAxis"></span><span id="Hour3" class="TimeAxis"></span><span id="Hour4" class="TimeAxis"></span><span id="Hour5" class="TimeAxis"></span><span id="Hour6" class="TimeAxis"></span><span id="Hour7" class="TimeAxis"></span>
+					</div><!--Time-->
+				</div><!--TimeWindow-->
 			</div><!--HeaderTimeLine-->
 
 			<div id="HeaderOptions"><span class="Text">LOGO</span></div>
@@ -55,7 +57,7 @@
 				</form>
 			</div><!--Options-->
 
-			<div id="FooterEvent"><span class="Text"><%= link_to 'View All Venues', venues_path %></span></div>
+			<div id="FooterEvent"><span class="Text"><a href="#">View All Venues</a></span></div>
 			<div id="FooterSlider"><span class="Text"> | | | | | </span></div>
 			<div id="FooterOptions"></div>
 

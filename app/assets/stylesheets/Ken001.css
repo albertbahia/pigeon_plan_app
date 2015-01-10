@@ -1,80 +1,117 @@
+/*
+Structure: 
 *
+	HotSpot
+		SearchBox
+			SearchInput
+			SearchIcon
+			
+		HeaderEvent
+		HeaderTimeLine
+			HeaderDate
+				Arrow
+				InputDate
+				InputTime
+			TimeWindow
+				Time
+		HeaderOptions
+		
+		Title
+		Timeline
+			TimeArrow
+		Options
+		
+		FooterEvent
+		FooterSlider
+		FooterOptions
+
+*/
+* 
+	{ 
+		margin: 0; 
+		padding: 0; 
+		
+		/*outline: 1px dashed #000;*/
+		
+	}
+	
+div
 	{
-		margin: 0;
-		padding: 0;
-		/*
-		outline: 1px dashed #000;
-		*/
+	  box-sizing:border-box;
+	  -moz-box-sizing:border-box;
+	  -webkit-box-sizing:border-box;
 	}
 
 #HotSpot
 	{
+		width: 80%;/*1206px;*/
+		height: /*80%;*/ 500px;
 		position: absolute;
         top: 50%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
 		border: 1px solid black;
+		overflow: hidden;
 	}
 
-#SearchBox
+	#SearchBox
 	{
-		width: 1208px;
-		height: 60px;
+		width: 100%; /*1204px;*/
+		height: /*12%;*/ 60px;
 		text-align: center;
-		line-height: 60px;
+		line-height: 60px; /*Need to have JS to change this value*/
 	}
-
+	
 #SearchInput
 	{
-		width: 600px;
-		height: 25px;
-		padding-left: 6px;
+		width: 50%; /*600px;*/
+		height: /*50%;*/ 25px;
 	}
 
 #SearchIcon
 	{
-		width: 26px;
-		height: 26px;
-		background-image: url('Search.png');
-		background-size: 26px 26px;
+		width: 26px; /*Need to have JS to change this value*/
+		height: 26px; /*Need to have JS to change this value*/
+		background:url("../image/Search.png");
+		background-size: 26px 26px; /*Need to have JS to change this value*/
 		background-repeat: no-repeat;
 		border: 0;
 	}
-
+	
 #HeaderEvent
 	{
-		width: 200px;
-		height: 64px;
+		width: 16%; /*200px;*/
+		height: /*12.8%;*/ 64px;
 		float: left;
 		clear: left;
 		border: 1px solid black;
 		text-align: center;
-		line-height: 60px;
+		line-height: 60px; /*Need to have JS to change this value*/
+		position: relative;
 	}
 
 #HeaderTimeLine
 	{
-		width: 800px;
-		height: 64px;
+		width: 68%; /*800px;*/
+		height: /*12.8%;*/ 64px;
 		border: 1px solid black;
 		float: left;
 		text-align: center;
-
 	}
-
+	
 #HeaderDate
 	{
-		width: 800px;
-		height: 32px;
+		width: 100%; /*800px;*/
+		height: /*6.4%;*/ 32px;
 		text-align: center;
-		line-height: 32px;
+		line-height: 32px; /*Need to have JS to change this value*/
 	}
 
 #Arrow
 	{
-		width: 20px;
-		height: 20px;
+		width: 20px; /*Need to have JS to change this value*/
+		height: 20px; /*Need to have JS to change this value*/
 		display: inline-block;
 		vertical-align: middle;
 		line-height: normal;
@@ -82,71 +119,84 @@
 
 #InputDate
 	{
-		width: 250px;
-		height: 20px;
+		min-width: 13em;
+		width: 31.25%; /*250px;*/	
+		height: /*100%;*/ 20px;
 		font-weight: bold;
 		text-align: center;
 	}
-
+	
 #InputTime
 	{
-		width: 100px;
+		min-width: 5em;
+		width: 12.5%; /*100px;*/
 		height: 20px;
 		font-weight: bold;
 		text-align: center;
 	}
-/*
+/*	
 #AmPm
 	{
 		font-weight: bold;
 		text-align: center;
-		width: 50px;
+		width: 50px; 
 		height: 20px;
 	}
 */
-#Time
+
+#TimeWindow
 	{
-		width: 800px;
+		width: 100%; /*800px;*/
 		height: 32px;
 		float: left;
 		clear: left;
-		/*border: 1px solid black;*/s
+		overflow: hidden;
+	}	
+	
+#Time
+	{
+		width: 140%; /*1120px;*/
+		height: 32px;
 		text-align: center;
 		line-height: 32px;
+		position: relative;
+		left: -20%; /*-160px;*/
 	}
-
+	
 .TimeAxis
 	{
-		width: 20%;
+		width: 14.2857142857%; /*160px;*/
 		height: 32px;
 		display: inline-block;
 		margin: 0px;
 		padding: 0px;
 		/*border: 1px solid black;*/
+		/*background:url("../image/Grid.png");*/
 	}
 
 #HeaderOptions
 	{
-		width: 200px;
+		width: 16%; /*200px;*/
 		height: 64px;
 		border: 1px solid black;
 		text-align: center;
 		line-height: 60px;
 		float: left;
+		position: relative;
 	}
 
 #Title
 	{
-		width: 200px;
+		width: 16%; /*200px;*/
 		height: 330px;
 		float: left;
 		clear: left;
 		border: 1px solid black;
 	}
 
-.Top
+.Top 
 	{
-		width: 146px;
+		width: 73%; /*146px;*/
 		height: 50px;
 		border: 1px solid black;
 		text-align: center;
@@ -155,11 +205,11 @@
 		margin-right: auto;
 		margin-left: auto;
 	}
-
+	
 #Timeline
 	{
+		width: 68%; /*800px;*/
 		height: 330px;
-		width: 800px;
 		float: left;
 		/*clear: left;*/
 		border: 1px solid black;
@@ -175,42 +225,41 @@
 		top: 50%;
 		transform: translateY(-50%);
 	}
-
+	
 .icon-back
 	{
 		float: left;
 	}
-
+	
 .icon-next
 	{
 		float: right;
 	}
-
+		
 #Options
 	{
-		width: 200px;
+		width: 16%; /*200px;*/
 		height: 330px;
 		border: 1px solid black;
 		float: left;
 	}
-
+	
 #filterName
 	{
 		margin: 10px;
 		text-align: center;
-
 	}
-
+	
 #SearchButton
 	{
 		width: 50px;
 		height: 20px;
 	}
-
+	
 #FooterEvent
 	{
+		width: 16%; /*200px;*/
 		height: 40px;
-		width: 200px;
 		float: left;
 		clear: left;
 		border: 1px solid black;
@@ -220,34 +269,34 @@
 
 #FooterSlider
 	{
-		width: 800px;
+		width: 68%; /*800px;*/
 		height: 40px;
 		float: left;
 		border: 1px solid black;
 		text-align: center;
 		line-height: 40px;
 	}
-
+	
 #FooterOptions
 	{
-		width: 200px;
+		width: 16%; /*200px;*/
 		height: 40px;
 		float: left;
 		border: 1px solid black;
 	}
-
+	
 .Text
 	{
 		 display: inline-block;
 		 vertical-align: middle;
 		 line-height: normal;
 	 }
-
+	 
 #SearchOption
 	{
 		padding: 10px;
 	}
-
+	
 #SearchButton
 	{
 		float: right;
@@ -259,3 +308,78 @@
 		filter: alpha(opacity=30);
 	}
 
+.picker__list .picker__list-item--highlighted small 
+	{
+		color: #fff;
+	}
+
+.picker__list small 
+	{
+		color: #999;
+		float: right;
+		line-height: 1.5;
+	}
+
+small 
+	{
+		font-size: 80%;
+	}
+
+/*====================*/
+@media all and (min-width: 610px) and (max-width: 900px) {
+	
+#HeaderEvent
+	{
+		width: 7.188em;
+	}
+
+#HeaderOptions
+	{
+		width: 7.188em;
+	}
+
+#Title
+	{
+		width: 7.188em;
+	}
+		
+#Options
+	{
+		width: 7.188em;
+	}
+
+#FooterEvent
+	{
+		width: 7.188em;
+	}
+
+#FooterOptions
+	{
+		width: 7.188em;
+	}
+
+#HeaderTimeLine
+	{
+		width: calc(100% - 14.375em);
+	}
+
+#Time
+	{
+		width: 233.33333333%;
+		left: -66.66666666666%;
+	}
+	
+.TimeAxis
+	{
+		width: 14.2857%; 
+	}
+	
+#Timeline
+	{
+		width: calc(100% - 14.375em);
+	}
+	
+#FooterSlider
+	{
+		width: calc(100% - 14.375em);
+	}
