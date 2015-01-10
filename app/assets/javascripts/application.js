@@ -13,6 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require picker.js
+//= require picker.date.js
+//= require picker.time.js
+//= require Ken001.js
 //= require_tree .
+
 
 console.log('loaded');
