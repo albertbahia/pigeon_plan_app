@@ -1,4 +1,6 @@
-$(document).ready(function () {
+var ready;
+
+ready = function () {
   	console.log('ken001.js loaded');
   /*==================================================*/
 	var today = {
@@ -32,6 +34,7 @@ $(document).ready(function () {
 	$date.pickadate({
 
 		onStart: function(){
+			console.log('onStart called');
 			this.set('select', (today.local));
 			selectedDate=this.get('select').obj;
 			myDate=totalTime(selectedDate, selectedTime);
@@ -366,6 +369,7 @@ $(document).ready(function () {
 		  $(this).stop().fadeTo('fast', 0.3);
 	   }
 	);
+};
 
-	alert("JS activated");
-}());
+$(document).ready(ready);
+$(document).on('page:load', ready);
