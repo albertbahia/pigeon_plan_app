@@ -18,5 +18,4 @@
 //= require picker.time.js
 //= require_tree .
 
-
 console.log('loaded');
