@@ -49,7 +49,6 @@ var isLocalDateGreaterThan = function(one, two) {
  * The date picker constructor
  */
 function DatePicker( picker, settings ) {
-
     var calendar = this,
         element = picker.$node[ 0 ],
         elementValue = element.value,
@@ -554,7 +553,7 @@ DatePicker.prototype.validate = function( type, dateObject, options ) {
 
     } //endif
 
-
+    console.log(dateObject);
     // Return the date object settled on.
     return dateObject
 } //DatePicker.prototype.validate

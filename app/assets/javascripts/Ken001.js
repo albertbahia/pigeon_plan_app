@@ -1,6 +1,4 @@
-var ready;
-
-ready = function () {
+var ready = function () {
   	console.log('ken001.js loaded');
   /*==================================================*/
 	var today = {
@@ -31,6 +29,7 @@ ready = function () {
 //Need to Fix "Today" button on date selection
 
 /*DATE==================================================*/
+console.log($date.pickadate());
 	$date.pickadate({
 
 		onStart: function(){
@@ -56,7 +55,6 @@ ready = function () {
 
 	});/*$date.pickadate*/
 
-	console.log('backdate');
 	$backDate.on('click', function(){
 
 		if (dateNoTime(myDate.utc) > dateNoTime(today.utc)){ //if the date is different
@@ -349,7 +347,7 @@ ready = function () {
 
 	function debugging(myDate){
 
-		console.clear();
+		// console.clear();
 
 		console.log("Year: " + myDate.year);
 		console.log("Month: " + myDate.month);
