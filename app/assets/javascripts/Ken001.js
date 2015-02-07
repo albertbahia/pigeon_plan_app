@@ -7,7 +7,7 @@ ready = function () {
 		local: new Date()
 	}
 	today.utc= today.local.getTime();
-
+	console.log(today);
 	var selectedDate;
 	var selectedTime;
 
@@ -369,7 +369,7 @@ ready = function () {
 		  $(this).stop().fadeTo('fast', 0.3);
 	   }
 	);
-};
+}();
 
 $(document).ready(ready);
 $(document).on('page:load', ready);
