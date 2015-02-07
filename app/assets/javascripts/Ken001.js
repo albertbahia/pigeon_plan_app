@@ -1,4 +1,4 @@
-var ready = function () {
+(function () {
   	console.log('ken001.js loaded');
   /*==================================================*/
 	var today = {
@@ -56,7 +56,7 @@ console.log(this);
 	});/*$date.pickadate*/
 
 	$backDate.on('click', function(){
-
+		console.log('back date clicked');
 		if (dateNoTime(myDate.utc) > dateNoTime(today.utc)){ //if the date is different
 
 			selectedDate.setDate(selectedDate.getDate()-1);
@@ -82,7 +82,7 @@ console.log(this);
 	});/*$backDate.on*/
 
 	$forwardDate.on('click', function(){
-
+		console.log('forward date clicked');
 		selectedDate.setDate(selectedDate.getDate()+1);
 		$date.pickadate('picker').set('select', [selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate()]);
 
@@ -367,7 +367,4 @@ console.log(this);
 		  $(this).stop().fadeTo('fast', 0.3);
 	   }
 	);
-}();
-
-$(document).ready(ready);
-$(document).on('page:load', ready);
+}());
