@@ -29,7 +29,7 @@ var ready = function () {
 //Need to Fix "Today" button on date selection
 
 /*DATE==================================================*/
-console.log($date.pickadate());
+console.log(this);
 	$date.pickadate({
 
 		onStart: function(){
@@ -45,7 +45,7 @@ console.log($date.pickadate());
 		},
 
 		onClose: function(){
-			//debugging();
+			debugging();
 		},
 
 		format: 'dddd, d mmmm, yyyy',
