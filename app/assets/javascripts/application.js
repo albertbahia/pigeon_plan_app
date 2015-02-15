@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require picker.js
 //= require picker.date.js
 //= require picker.time.js

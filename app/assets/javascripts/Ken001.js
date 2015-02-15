@@ -367,4 +367,5 @@ console.log(this);
 		  $(this).stop().fadeTo('fast', 0.3);
 	   }
 	);
+	this.Picker();
 }());
