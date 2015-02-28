@@ -1,11 +1,11 @@
 /*
-Structure: 
+Structure:
 *
 	HotSpot
 		SearchBox
 			SearchInput
 			SearchIcon
-			
+
 		HeaderEvent
 		HeaderTimeLine
 			HeaderDate
@@ -15,26 +15,26 @@ Structure:
 			TimeWindow
 				Time
 		HeaderOptions
-		
+
 		Title
 		Timeline
 			TimeArrow
 		Options
-		
+
 		FooterEvent
 		FooterSlider
 		FooterOptions
 
 */
-* 
-	{ 
-		margin: 0; 
-		padding: 0; 
-		
+*
+	{
+		margin: 0;
+		padding: 0;
+
 		/*outline: 1px dashed #000;*/
-		
+
 	}
-	
+
 div
 	{
 	  box-sizing:border-box;
@@ -62,23 +62,24 @@ div
 		text-align: center;
 		line-height: 60px; /*Need to have JS to change this value*/
 	}
-	
+
 #SearchInput
 	{
+		display: inline;
 		width: 50%; /*600px;*/
 		height: /*50%;*/ 25px;
 	}
 
 #SearchIcon
 	{
+		display: inline-block;
 		width: 26px; /*Need to have JS to change this value*/
 		height: 26px; /*Need to have JS to change this value*/
-		background:url("../image/Search.png");
 		background-size: 26px 26px; /*Need to have JS to change this value*/
 		background-repeat: no-repeat;
 		border: 0;
 	}
-	
+
 #HeaderEvent
 	{
 		width: 16%; /*200px;*/
@@ -99,7 +100,7 @@ div
 		float: left;
 		text-align: center;
 	}
-	
+
 #HeaderDate
 	{
 		width: 100%; /*800px;*/
@@ -120,12 +121,12 @@ div
 #InputDate
 	{
 		min-width: 13em;
-		width: 31.25%; /*250px;*/	
+		width: 31.25%; /*250px;*/
 		height: /*100%;*/ 20px;
 		font-weight: bold;
 		text-align: center;
 	}
-	
+
 #InputTime
 	{
 		min-width: 5em;
@@ -134,12 +135,12 @@ div
 		font-weight: bold;
 		text-align: center;
 	}
-/*	
+/*
 #AmPm
 	{
 		font-weight: bold;
 		text-align: center;
-		width: 50px; 
+		width: 50px;
 		height: 20px;
 	}
 */
@@ -151,8 +152,8 @@ div
 		float: left;
 		clear: left;
 		overflow: hidden;
-	}	
-	
+	}
+
 #Time
 	{
 		width: 140%; /*1120px;*/
@@ -162,7 +163,7 @@ div
 		position: relative;
 		left: -20%; /*-160px;*/
 	}
-	
+
 .TimeAxis
 	{
 		width: 14.2857142857%; /*160px;*/
@@ -194,7 +195,7 @@ div
 		border: 1px solid black;
 	}
 
-.Top 
+.Top
 	{
 		width: 73%; /*146px;*/
 		height: 50px;
@@ -205,7 +206,7 @@ div
 		margin-right: auto;
 		margin-left: auto;
 	}
-	
+
 #Timeline
 	{
 		width: 68%; /*800px;*/
@@ -225,17 +226,17 @@ div
 		top: 50%;
 		transform: translateY(-50%);
 	}
-	
+
 .icon-back
 	{
 		float: left;
 	}
-	
+
 .icon-next
 	{
 		float: right;
 	}
-		
+
 #Options
 	{
 		width: 16%; /*200px;*/
@@ -243,19 +244,19 @@ div
 		border: 1px solid black;
 		float: left;
 	}
-	
+
 #filterName
 	{
 		margin: 10px;
 		text-align: center;
 	}
-	
+
 #SearchButton
 	{
 		width: 50px;
 		height: 20px;
 	}
-	
+
 #FooterEvent
 	{
 		width: 16%; /*200px;*/
@@ -276,7 +277,7 @@ div
 		text-align: center;
 		line-height: 40px;
 	}
-	
+
 #FooterOptions
 	{
 		width: 16%; /*200px;*/
@@ -284,19 +285,19 @@ div
 		float: left;
 		border: 1px solid black;
 	}
-	
+
 .Text
 	{
 		 display: inline-block;
 		 vertical-align: middle;
 		 line-height: normal;
 	 }
-	 
+
 #SearchOption
 	{
 		padding: 10px;
 	}
-	
+
 #SearchButton
 	{
 		float: right;
@@ -308,26 +309,26 @@ div
 		filter: alpha(opacity=30);
 	}
 
-.picker__list .picker__list-item--highlighted small 
+.picker__list .picker__list-item--highlighted small
 	{
 		color: #fff;
 	}
 
-.picker__list small 
+.picker__list small
 	{
 		color: #999;
 		float: right;
 		line-height: 1.5;
 	}
 
-small 
+small
 	{
 		font-size: 80%;
 	}
 
 /*====================*/
 @media all and (min-width: 610px) and (max-width: 900px) {
-	
+
 #HeaderEvent
 	{
 		width: 7.188em;
@@ -342,7 +343,7 @@ small
 	{
 		width: 7.188em;
 	}
-		
+
 #Options
 	{
 		width: 7.188em;
@@ -368,17 +369,17 @@ small
 		width: 233.33333333%;
 		left: -66.66666666666%;
 	}
-	
+
 .TimeAxis
 	{
-		width: 14.2857%; 
+		width: 14.2857%;
 	}
-	
+
 #Timeline
 	{
 		width: calc(100% - 14.375em);
 	}
-	
+
 #FooterSlider
 	{
 		width: calc(100% - 14.375em);

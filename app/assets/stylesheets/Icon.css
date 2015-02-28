@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'helium';
-	src:url('../fonts/helium.eot?bgytse');
-	src:url('../fonts/helium.eot?#iefixbgytse') format('embedded-opentype'),
-		url('../fonts/helium.woff?bgytse') format('woff'),
-		url('../fonts/helium.ttf?bgytse') format('truetype'),
-		url('../fonts/helium.svg?bgytse#helium') format('svg');
+	src: asset-url('fonts/helium.eot?bgytse');
+	src: asset-url('fonts/helium.eot?#iefixbgytse') format('embedded-opentype'),
+		asset-url('fonts/helium.woff?bgytse') format('woff'),
+		asset-url('fonts/helium.ttf?bgytse') format('truetype'),
+		asset-url('fonts/helium.svg?bgytse#helium') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }

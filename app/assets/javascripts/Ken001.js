@@ -12,6 +12,7 @@
 	var myDate;
 
 	var $date = $('#InputDate');     // Date Input
+	console.log($date);
 	var $backDate = $('.icon-backwards');
 	var $forwardDate = $('.icon-forwards');
 
@@ -29,7 +30,6 @@
 //Need to Fix "Today" button on date selection
 
 /*DATE==================================================*/
-console.log(this);
 	$date.pickadate({
 
 		onStart: function(){
