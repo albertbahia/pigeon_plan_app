@@ -6,7 +6,7 @@
  */
 
 (function ( factory ) {
-
+    console.log("picker.js loaded");
     // AMD.
     if ( typeof define == 'function' && define.amd )
         define( 'picker', ['jquery'], factory )
