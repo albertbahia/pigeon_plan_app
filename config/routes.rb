@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   resources :users
   get '/home' => 'users#home', as: 'user_home'
   resources :schedules
-  resources :events
-  resources :venues
+  resources :events, defaults: { format: 'json'}
+  resources :venues, defaults: { format: 'json' }
   get '/top_venues' => 'venues#top_venues', as: 'top_venues'
 
   # ---Sessions---

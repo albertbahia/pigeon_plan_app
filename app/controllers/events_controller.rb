@@ -8,6 +8,9 @@ class EventsController < ApplicationController
 			@events = Event.where(creator_id: current_user.id)
 		else
 			@events = Event.all
+			respond_to do |format|
+				format.json { render :json => @events }
+			end
 		end
 	end
 
